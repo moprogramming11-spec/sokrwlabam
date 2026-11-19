@@ -3,6 +3,6 @@
   "name": "sokar-w-laban",
   "compatibility_date": "2026-11-19",
   "assets": {
-    "directory": "./frontend"
+    "directory": "."
   }
 }
