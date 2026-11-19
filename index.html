@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>سكر ولبن | هنحلي الدنيا</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="/"
+        ><img src="/img/logo638804253557130241.webp" /><b
+          >سكر ولبن<small>هنحلي الدنيا</small></b
+        ></a
+      >
+      <nav>
+        <a href="/">الرئيسية</a><a href="#products">المنتجات</a
+        ><a target="_blank" href="https://linktr.ee/sokkarwlaban">تواصل معنا</a>
+      </nav>
+      <div>
+        <button id="login-open" class="outline">دخول / حساب جديد</button
+        ><button id="cart-open" class="icon">
+          <i class="fa-solid fa-bag-shopping"></i> <span id="count">0</span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <small>سكر ولبن | هنحلي الدنيا</small>
+          <h1>اختار اللي بتحبه<br /><em>وخلي يومك أحلى</em></h1>
+          <p>منتجاتنا المفضلة في مكان واحد. تصفح واختار واطلب بسهولة.</p>
+          <a class="btn white" href="#products"
+            >شوف المنتجات <i class="fa-solid fa-arrow-left"></i
+          ></a>
+        </div>
+        <img src="/img/logo638804253557130241.webp" alt="شعار سكر ولبن" />
+      </section>
+      <section id="products">
+        <div class="heading">
+          <div>
+            <small>اختياراتنا</small>
+            <h2>المنتجات</h2>
+          </div>
+          <input id="search" placeholder="ابحث عن منتج" />
+        </div>
+        <div class="grid" id="product-grid">جاري تحميل المنتجات...</div>
+      </section>
+      <section class="banner">
+        <i class="fa-solid fa-heart"></i>
+        <div>
+          <h3>سكر ولبن — هنحلي الدنيا</h3>
+          <p>اختيارات لذيذة لكل وقت.</p>
+        </div>
+        <a href="https://linktr.ee/sokkarwlaban" target="_blank"
+          >تابعنا <i class="fa-solid fa-arrow-left"></i
+        ></a>
+      </section>
+    </main>
+    <footer>
+      © <span id="year"></span> سكر ولبن
+      <a href="https://linktr.ee/sokkarwlaban" target="_blank">روابطنا</a>
+    </footer>
+    <div class="shade" id="shade"></div>
+    <aside id="cart">
+      <button class="close" id="cart-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h2>سلة المشتريات</h2>
+      <div id="cart-items"></div>
+      <div class="total">الإجمالي <b id="total">0.00 ر.س</b></div>
+      <button class="btn" id="checkout">تأكيد الطلب</button>
+    </aside>
+    <div class="modal-wrap" id="auth">
+      <form class="modal" id="auth-form">
+        <button type="button" class="close" id="auth-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2>تسجيل الدخول</h2>
+        <label>اسم المستخدم<input name="username" required /></label
+        ><label
+          >كلمة المرور<input name="password" type="password" required
+        /></label>
+        <div id="register-fields" class="hidden">
+          <label>البريد الإلكتروني<input name="email" type="email" /></label
+          ><label>رقم الهاتف<input name="phone" /></label>
+        </div>
+        <button class="btn" id="auth-submit">دخول</button
+        ><button type="button" id="switch-auth" class="link">
+          إنشاء حساب جديد
+        </button>
+        <p id="auth-msg"></p>
+      </form>
+    </div>
+    <div id="toast"></div>
+    <script src="/index.js"></script>
+  </body>
+</html>
