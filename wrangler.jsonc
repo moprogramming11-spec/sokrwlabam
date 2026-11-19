@@ -1,0 +1,8 @@
+{
+  "$schema": "https://schema.cloudflare.com/wrangler/config-schema.json",
+  "name": "sokar-w-laban",
+  "compatibility_date": "2026-11-19",
+  "assets": {
+    "directory": "./frontend"
+  }
+}
